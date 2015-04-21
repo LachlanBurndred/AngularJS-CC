@@ -5,7 +5,7 @@ body
     font-family: sans-serif;
     color: white;
     line-height: 2;
-    width: 920px;
+    max-width: 920px;
 }
 
 h1
@@ -23,7 +23,7 @@ h2
     height: 500px;;
     position: relative;
     background-color: #f7f7f7;
-    margin: 10px 10px;
+    margin: 10px 10px 50px 10px;
     top: -20px;
     z-index: 9;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -32,7 +32,8 @@ h2
 p.title
 {
     background-color: #7ecde5;
-    padding-left: 10px;
+    padding-left: 20px;
+    font-weight: 600;
 }
 
 p.price
