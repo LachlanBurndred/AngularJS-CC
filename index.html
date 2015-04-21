@@ -11,7 +11,7 @@
         <h2>{{ promo }}</h2>
         
         <p class="title">{{ product.name }}</p>
-        <div class="prod">
+        <div class="product">
             <p class="title">{{ product.title }}</p>
             <p class="price">{{ product.price | currency }}</p>
             <div class="product_div">
@@ -20,6 +20,22 @@
                     <div class="product_container">
                         <p class="name"><strong>Book:</strong> {{ product_desc.name }}</p>
                         <p class="desc"><strong>Description: </strong>{{ product_desc.desc }}</p>
+                        <p class="date"> <strong>Release Date: </strong>{{ product.pubdate | date }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="title">{{ product2.name }}</p>
+        <div class="product">
+            <p class="title">{{ product2.title }}</p>
+            <p class="price">{{ product2.price | currency }}</p>
+            <div class="product_div">
+                <img class="product_thumb" src="img/Renaissance.jpg">
+                <div class="product_details">
+                    <div class="product_container">
+                        <p class="name"><strong>Book:</strong> {{ product2_desc.name }}</p>
+                        <p class="desc"><strong>Description: </strong>{{ product2_desc.desc }}</p>
+                        <p class="date"> <strong>Release Date: </strong>{{ product2.pubdate | date }}</p>
                     </div>
                 </div>
             </div>
