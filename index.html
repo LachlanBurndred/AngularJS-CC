@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Learning</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div class="main" ng-controller="MainController">
+        <h1>{{ title }}</h1>
+        <h2>{{ promo }}</h2>
+        
+        <p class="title">{{ product.name }}</p>
+        <p class="price">{{ price }}</p>
+        <p class="title">{{ product.title }}</p>
+        <p class="price">{{ product.price | currency }}</p>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="MainController.js"></script>
+</body>
+</html>
