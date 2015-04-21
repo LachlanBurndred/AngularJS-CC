@@ -3,6 +3,7 @@
 <head>
 	<title>AngularJS Learning</title>
 	<script type="text/javascript" src="angular.min.js"></script>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body ng-app="myApp">
     <div class="main" ng-controller="MainController">
@@ -10,9 +11,19 @@
         <h2>{{ promo }}</h2>
         
         <p class="title">{{ product.name }}</p>
-        <p class="price">{{ price }}</p>
-        <p class="title">{{ product.title }}</p>
-        <p class="price">{{ product.price | currency }}</p>
+        <div class="prod">
+            <p class="title">{{ product.title }}</p>
+            <p class="price">{{ product.price | currency }}</p>
+            <div class="product_div">
+                <img class="product_thumb" src="img/skulduggery.jpg">
+                <div class="product_details">
+                    <div class="product_container">
+                        <p class="name"><strong>Book:</strong> {{ product_desc.name }}</p>
+                        <p class="desc"><strong>Description: </strong>{{ product_desc.desc }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
