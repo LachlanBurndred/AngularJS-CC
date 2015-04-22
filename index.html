@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title>AngularJS Learning</title>
-	<script type="text/javascript" src="angular.min.js"></script>
-	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-app="myApp">
     <div class="main" ng-controller="MainController">
@@ -16,16 +16,17 @@
                 <img class="product_thumb" ng-src="{{ product.cover }}">
                 <div class="product_details">
                     <div class="product_container">
-                        <p class="name"><strong>Book:</strong> {{ product.name }}</p>
+                        <p class="name"><strong>Book:</strong>{{ product.name }}</p>
                         <p class="desc"><strong>Description: </strong>{{ product.desc }}</p>
                         <p class="date"> <strong>Release Date: </strong>{{ product.pubdate | date }}</p>
+                        <p class="likes" ng-click="plusOne($index)">+{{ product.likes }}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="app.js"></script>
-    <script src="MainController.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/MainController.js"></script>
 </body>
 </html>
