@@ -3,7 +3,7 @@ app.controller('MainController', ['$scope', function($scope) {
     $scope.promo = "Your Own String";
     $scope.products = [ 
   { 
-    name: 'Skulduggery', 
+    name: 'Skulduggery',
     price: 19, 
     desc: "The first book in the series of an award winning fantasy universe.",
     pubdate: new Date('2014', '03', '08'), 
