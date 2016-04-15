@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<title>AngularJS Learning</title>
+    	<title>AngularJS Implementation</title>
     	<script type="text/javascript" src="js/angular.min.js"></script>
     	<link rel="stylesheet" href="css/main.css">
     </head>
@@ -9,7 +9,14 @@
         <div class="main" ng-controller="MainController">
             <h1>{{ title }}</h1>
             <h2>{{ promo }}</h2>
-            
+            <h3>
+                <ul>
+                    <li>Books</li>
+                    <li>Music</li>
+                    <li>Movies</li>
+                </ul>
+            </h3>
+
             <div class="product" ng-repeat="product in products">
                 <p class="price">{{ product.price | currency }}</p>
                 <div class="product_div">

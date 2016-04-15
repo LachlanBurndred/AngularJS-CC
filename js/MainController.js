@@ -1,4 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) {
+
     $scope.title = 'Mistfire Designs';
     $scope.promo = "Top Rated Books";
     $scope.products = [

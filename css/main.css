@@ -26,7 +26,7 @@ h2
     margin: 10px 10px 50px 10px;
     top: -20px;
     z-index: 9;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 p.title
@@ -80,7 +80,7 @@ p.price
     top: 45px;
     right: 150px;
     background-color: white;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     color: black;
 }
 
@@ -97,7 +97,7 @@ p.price
     font-size: 20px;
     text-align: center;
     line-height: 50px;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
     position: absolute;
     right: -70px;
     bottom: -60px;
